@@ -5,18 +5,14 @@
 @property (strong) UIImageView *balls;
 @end
 
-//UIImageView *balls;
-
 %hook WAWeatherCityView
 
-//%property (nonatomic|assign|retain|copy|weak|strong|getter|setter) Type name;
 // hopefully that will work
 // we cannot set it globally, because there are multiple WAWeatherCityView views
 %property (strong) UIImageView *balls;
 
 - (void)updateUIIncludingExtendedWeather:(_Bool)arg1 {
 	%orig;
-	HBLogDebug(@"updateUIIncludingExtendedWeather");
 
 	if (self.balls) {
 		[self.balls removeFromSuperview];
@@ -26,8 +22,6 @@
 	[[self pageTemperature] setTextColor:[UIColor colorWithRed:1 green:1 blue:1 alpha:1.0f]];
 
 	NSDictionary *prefs = [NSDictionary dictionaryWithContentsOfFile:@"/var/mobile/Library/Preferences/com.zanehelton.hotasballs.plist"];
-	//int hotAsBallsTemp = [prefs[@"hotAsBallsTemp"] intValue];
-	//int coldAsBallsTemp = [prefs[@"coldAsBallsTemp"] intValue];
 	int hotAsBallsTemp = [([prefs objectForKey:@"hotAsBallsTemp"] ?: @(32)) intValue];
 	int coldAsBallsTemp = [([prefs objectForKey:@"coldAsBallsTemp"] ?: @(-1)) intValue];
 

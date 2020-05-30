@@ -53,22 +53,6 @@
 			<key>defaults</key>
 			<string>com.zanehelton.hotasballs</string>
 		</dict>
-		<dict>
-			<key>cell</key>
-			<string>PSSliderCell</string>
-			<key>default</key>
-			<string>-1</string>
-			<key>showValue</key>
-			<true/>
-			<key>min</key>
-			<real>-10</real>
-			<key>max</key>
-			<real>100</real>
-			<key>isSegmented</key>
-			<true/>
-			<key>segmentCount</key>
-			<integer>110</integer>
-		</dict>
 
 		<dict>
 			<key>cell</key>
