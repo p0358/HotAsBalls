@@ -11,7 +11,7 @@
 		<key>detail</key>
 		<string>HABRootListController</string>
 		<key>icon</key>
-		<string>icon.png</string>
+		<string>/Library/Application Support/HotAsBalls/hot-balls.png</string>
 		<key>isController</key>
 		<true/>
 		<key>label</key>

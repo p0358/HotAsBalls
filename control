@@ -1,9 +1,9 @@
 Package: com.zanehelton.hotasballs
 Name: HotAsBalls
 Depends: mobilesubstrate
-Version: 1.2.0
+Version: 1.3.0
 Architecture: iphoneos-arm
 Description: When the temperature is over a temperature specified in Settings, the numerical temperature will be replaced by a pair of sweaty balls.
-Maintainer: Zane Helton
-Author: Zane Helton
+Maintainer: p0358
+Author: Zane Helton, p0358
 Section: Tweaks

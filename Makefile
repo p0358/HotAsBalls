@@ -1,19 +1,13 @@
-include $(THEOS)/makefiles/common.mk
+INSTALL_TARGET_PROCESSES = Weather
+ARCHS = armv7 arm64 arm64e
 
-SDKVERSION = 9.0
+include $(THEOS)/makefiles/common.mk
 
 TWEAK_NAME = HotAsBalls
 HotAsBalls_FILES = Tweak.xm
-ADDITIONAL_OBJCFLAGS = -fobjc-arc
+HotAsBalls_CFLAGS = -fobjc-arc
 
-BUNDLE_NAME = com.zanehelton.hotasballs
-com.zanehelton.hotasballs_INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries
-
-include $(THEOS)/makefiles/bundle.mk
 include $(THEOS_MAKE_PATH)/tweak.mk
-
-after-install::
-	install.exec "killall -9 Weather"
 	
 SUBPROJECTS += hotasballs
 include $(THEOS_MAKE_PATH)/aggregate.mk
