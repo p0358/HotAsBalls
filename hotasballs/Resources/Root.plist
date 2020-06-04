@@ -7,8 +7,26 @@
 		<dict>
 			<key>cell</key>
 			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Maybe there are certain situations where you would rather have this thing temporarily disabled...</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.zanehelton.hotasballs</string>
 			<key>label</key>
-			<string>"Hot as Balls" temperature:</string>
+			<string>Enable tweak</string>
+			<key>key</key>
+			<string>isEnabled</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Hot as Balls</string>
 			<key>footerText</key>
 			<string>Sweating balls will be shown starting with this many degrees.</string>
 		</dict>
@@ -25,6 +43,24 @@
 			<string>numbers</string>
 			<key>suffix</key>
 			<string>°</string>
+			<key>label</key>
+			<string>Temperature:</string>
+			<key>defaults</key>
+			<string>com.zanehelton.hotasballs</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>placeholder</key>
+			<string>It's hot as balls</string>
+			<key>key</key>
+			<string>hotAsBallsText</string>
+			<key>default</key>
+			<string>It's hot as balls</string>
+			<key>keyboard</key>
+			<string>numbers</string>
+			<key>label</key>
+			<string>Text:</string>
 			<key>defaults</key>
 			<string>com.zanehelton.hotasballs</string>
 		</dict>
@@ -33,7 +69,7 @@
 			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>label</key>
-			<string>"Cold as Balls" temperature:</string>
+			<string>Cold as Balls</string>
 			<key>footerText</key>
 			<string>Cold balls will be shown when the temperature goes this low.</string>
 		</dict>
@@ -50,6 +86,24 @@
 			<string>numbers</string>
 			<key>suffix</key>
 			<string>°</string>
+			<key>label</key>
+			<string>Temperature:</string>
+			<key>defaults</key>
+			<string>com.zanehelton.hotasballs</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>placeholder</key>
+			<string>It's cold as balls</string>
+			<key>key</key>
+			<string>coldAsBallsText</string>
+			<key>default</key>
+			<string>It's cold as balls</string>
+			<key>keyboard</key>
+			<string>numbers</string>
+			<key>label</key>
+			<string>Text:</string>
 			<key>defaults</key>
 			<string>com.zanehelton.hotasballs</string>
 		</dict>
@@ -57,9 +111,31 @@
 		<dict>
 			<key>cell</key>
 			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Misc</string>
+			<key>footerText</key>
+			<string>For people who lost one of their balls to testicular cancer.
+Friendly reminder to check your balls! Early detection is vital!</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.zanehelton.hotasballs</string>
+			<key>label</key>
+			<string>Single ball mode</string>
+			<key>key</key>
+			<string>isSingleBall</string>
+		</dict>
+
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
 			<key>footerText</key>
 			<string>In order for your settings to save you must leave this page by pressing the back button.
-Use Celsius or Fahrenheit depending on your settings.</string>
+Use Celsius or Fahrenheit depending on your settings – the tweak will compare entered numbers with what's displayed in the Weather app.</string>
 		</dict>
 
 		<dict>
@@ -74,25 +150,11 @@ Use Celsius or Fahrenheit depending on your settings.</string>
 			<key>cell</key>
 			<string>PSButtonCell</string>
 			<key>label</key>
-			<string>Follow @ZaneHelton</string>
-			<key>action</key>
-			<string>openTwitter1</string>
-		</dict>
-		<dict>
-			<key>cell</key>
-			<string>PSButtonCell</string>
-			<key>label</key>
-			<string>Follow @p0358</string>
-			<key>action</key>
-			<string>openTwitter2</string>
-		</dict>
-		<dict>
-			<key>cell</key>
-			<string>PSButtonCell</string>
-			<key>label</key>
 			<string>Donate @p0358 (PayPal)</string>
 			<key>action</key>
 			<string>openPayPalMe</string>
+			<key>icon</key>
+			<string>paypal.png</string>
 		</dict>
 		<dict>
 			<key>cell</key>
@@ -101,6 +163,8 @@ Use Celsius or Fahrenheit depending on your settings.</string>
 			<string>Open on GitHub</string>
 			<key>action</key>
 			<string>openGithub</string>
+			<key>icon</key>
+			<string>github.png</string>
 		</dict>
 
 		<dict>
